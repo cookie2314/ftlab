@@ -151,8 +151,8 @@ def run_split_league_sim(teams, matches, n_simulations):
 # --- Streamlit UI ---
 st.title("🏆 K리그1 리그 + 스플릿 시뮬레이션")
 
-team_input = st.text_area("팀 정보 입력 (팀이름 Elo 승점)", height=10)
-match_input = st.text_area("남은 정규리그 경기 입력 (팀1 팀2)", height=10)
+team_input = st.text_area("팀 정보 입력 (팀이름 Elo 승점)", height=100)
+match_input = st.text_area("남은 정규리그 경기 입력 (팀1 팀2)", height=100)
 n_simulations = st.number_input("스플릿 시뮬레이션 횟수", min_value=500, value=1000, step=100)
 
 if st.button("시뮬레이션 실행"):
